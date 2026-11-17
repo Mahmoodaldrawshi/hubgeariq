@@ -123,7 +123,7 @@ const counterObserver = new IntersectionObserver(
 document.querySelectorAll('.counter').forEach((el) => counterObserver.observe(el));
 
 /* ---------- تمييز الرابط النشط (Scroll Spy) ---------- */
-const sections = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id], footer[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
 const spyObserver = new IntersectionObserver(
