@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HubGearIQ | متجر الإلكترونيات الذكي</title>
   <meta name="description" content="HubGearIQ — متجرك الموثوق لأحدث الإلكترونيات: سماعات، شواحن، شاشات وإكسسوارات بأسعار منافسة وضمان أصلي وتوصيل سريع.">
+  <meta name="theme-color" content="#0a0e17">
+
+  <!-- معاينة المشاركة (واتساب / فيسبوك / تيليغرام) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HubGearIQ">
+  <meta property="og:title" content="HubGearIQ | متجر الإلكترونيات الذكي">
+  <meta property="og:description" content="سماعات، شاشات، شواحن وإكسسوارات أصلية بأسعار منافسة — ضمان سنة كاملة وتوصيل سريع.">
+  <meta property="og:locale" content="ar_AR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HubGearIQ | متجر الإلكترونيات الذكي">
+  <meta name="twitter:description" content="سماعات، شاشات، شواحن وإكسسوارات أصلية بأسعار منافسة — ضمان سنة كاملة وتوصيل سريع.">
 
   <!-- ✏️ ملاحظة: رقم الواتساب يُعدَّل من مكان واحد في ملف js/main.js (المتغير WHATSAPP_NUMBER) -->
 
@@ -144,12 +155,12 @@
           <p class="section-sub">منتجات مختارة بعناية — اطلب مباشرة عبر واتساب</p>
         </div>
 
-        <div class="filters reveal" role="tablist">
-          <button class="filter-btn active" data-filter="all">الكل</button>
-          <button class="filter-btn" data-filter="headphones">سماعات</button>
-          <button class="filter-btn" data-filter="accessories">إكسسوارات</button>
-          <button class="filter-btn" data-filter="chargers">شواحن</button>
-          <button class="filter-btn" data-filter="screens">شاشات</button>
+        <div class="filters">
+          <button class="filter-btn active" aria-pressed="true" data-filter="all">الكل</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="headphones">سماعات</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="accessories">إكسسوارات</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="chargers">شواحن</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="screens">شاشات</button>
         </div>
 
         <div class="products-grid" id="productsGrid">
@@ -162,7 +173,7 @@
             <div class="product-body">
               <h3>سماعة لاسلكية Pro Max</h3>
               <p>عزل ضوضاء نشط + بطارية تدوم 40 ساعة</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>4.9</span>
               </div>
               <div class="price-row"><span class="price">49$</span><span class="old-price">62$</span></div>
@@ -178,7 +189,7 @@
             <div class="product-body">
               <h3>لوحة مفاتيح ميكانيكية RGB</h3>
               <p>مفاتيح زرقاء + إضاءة قابلة للتخصيص</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>4.8</span>
               </div>
               <div class="price-row"><span class="price">39$</span></div>
@@ -194,7 +205,7 @@
             <div class="product-body">
               <h3>شاشة قيمنق 27 بوصة 144Hz</h3>
               <p>دقة QHD + استجابة 1ms</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>4.9</span>
               </div>
               <div class="price-row"><span class="price">189$</span><span class="old-price">219$</span></div>
@@ -209,7 +220,7 @@
             <div class="product-body">
               <h3>باور بانك 20000mAh</h3>
               <p>شحن سريع 22.5W + منفذين USB</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>4.7</span>
               </div>
               <div class="price-row"><span class="price">25$</span></div>
@@ -225,7 +236,7 @@
             <div class="product-body">
               <h3>ماوس قيمنق RGB</h3>
               <p>حساسية 12800 DPI + 6 أزرار قابلة للبرمجة</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>4.8</span>
               </div>
               <div class="price-row"><span class="price">19$</span><span class="old-price">26$</span></div>
@@ -241,7 +252,7 @@
             <div class="product-body">
               <h3>شاحن GaN سريع 65W</h3>
               <p>3 منافذ + تقنية GaN مدمجة الحجم</p>
-              <div class="stars" aria-label="تقييم 5 من 5">
+              <div class="stars" aria-label="تقييم المنتج">
                 <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>5.0</span>
               </div>
               <div class="price-row"><span class="price">22$</span></div>

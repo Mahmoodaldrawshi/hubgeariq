@@ -55,8 +55,12 @@ const noResults = document.getElementById('noResults');
 
 filterButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
-    filterButtons.forEach((b) => b.classList.remove('active'));
+    filterButtons.forEach((b) => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
 
     const filter = btn.dataset.filter;
     let visibleCount = 0;
